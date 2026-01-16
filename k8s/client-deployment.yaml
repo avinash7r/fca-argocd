@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fca-client
-          image: localhost:5000/fca-client:1
+          image: localhost:5000/fca-client:15
           envFrom:
             - configMapRef:
                 name: fca-client-configmap
