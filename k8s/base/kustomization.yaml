@@ -1,0 +1,3 @@
+resources:
+  - client-deployment.yaml
+  - server-deployment.yaml
