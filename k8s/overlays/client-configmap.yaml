@@ -1,0 +1,7 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: fca-client-configmap
+data:
+  BACKEND_HOST: "fca-server-service"
+  BACKEND_PORT: "7777"

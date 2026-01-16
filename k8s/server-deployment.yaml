@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fca-server
-        image: localhost:5000/fca-server:8
+        image: localhost:5000/fca-server:1
         ports:
         - containerPort: 7777
 
@@ -31,5 +31,4 @@ spec:
     - protocol: TCP
       port: 7777
       targetPort: 7777
-  type: LoadBalancer  
   
