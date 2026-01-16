@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fca-client
-        image: localhost:5000/fca-client
+        image: localhost:5000/fca-client:8
         ports:
         - containerPort: 80
 

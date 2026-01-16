@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fca-server
-        image: localhost:5000/fca-server
+        image: localhost:5000/fca-server:8
         ports:
         - containerPort: 7777
 
