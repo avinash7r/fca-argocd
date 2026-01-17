@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fca-server
-        image: localhost:5000/fca-server:15
+        image: localhost:5000/fca-server:17
         envFrom:
           - secretRef:
               name: fca-server-secret
