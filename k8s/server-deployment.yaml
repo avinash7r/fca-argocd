@@ -15,6 +15,9 @@ spec:
       containers:
       - name: fca-server
         image: localhost:5000/fca-server:15
+        envFrom:
+          - secretRef:
+              name: fca-server-secret
         ports:
         - containerPort: 7777
 
