@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server
+  labels:
+    app: server
+spec:
+  selector:
+    matchLabels:
+      name: server
+  template:
+    metadata:
+      labels:
+        name: server
+    spec:
+      containers:
+        - name: server
+          # image: avinashrajure/fca-server:ff21d08f12884adaf637a4fd3d18a1c2f90c6e5a
+          image: server-image
+          ports:
+            - containerPort: 7777
+          envFrom:
+            - secretRef:
+                name: server-secrets
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  labels:
+    app: server
+spec:
+  selector:
+    name: server
+  ports:
+    - port: 7777
+      targetPort: 7777
