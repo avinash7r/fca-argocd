@@ -13,7 +13,5 @@ images:
   newName: avinashrajure/fca-server
   newTag: 0a60e29096a033c759cd8d7efbee1d04e2ee1794
 
-
 patchesStrategicMerge:
-  - server-replica-patch.yaml
-  - client-replica-patch.yaml
+  - 

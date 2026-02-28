@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fca-client-deployment
+spec:
+  replicas: 1
