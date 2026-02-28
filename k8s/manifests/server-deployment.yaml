@@ -5,6 +5,7 @@ metadata:
   labels:
     app: server
 spec:
+  replicas: 1
   selector:
     matchLabels:
       name: server
@@ -13,7 +14,6 @@ spec:
       labels:
         name: server
     spec:
-      replicas: 1
       containers:
         - name: server
           # image: avinashrajure/fca-server:ff21d08f12884adaf637a4fd3d18a1c2f90c6e5a

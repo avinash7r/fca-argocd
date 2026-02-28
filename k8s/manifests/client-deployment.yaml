@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: fca-client-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: fca-client
@@ -11,7 +12,6 @@ spec:
       labels:
         app: fca-client
     spec:
-      replicas: 1
       containers:
         - name: fca-client
           # image: avinashrajure/fca-client:693fb3b7f2cbaec0f227058022ac51b718cedbc3
