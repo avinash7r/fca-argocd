@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../../base
+
+images:
+- name: client-image
+  newName: avinashrajure/fca-client
+  newTag: 0a60e29096a033c759cd7efbee1d04e2ee1794
+- name: server-image
+  newName: avinashrajure/fca-server
+  newTag: 0a60e29096a033c759cdefbee1d04e2ee1794
+
+
