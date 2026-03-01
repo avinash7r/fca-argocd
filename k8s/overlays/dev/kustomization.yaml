@@ -14,7 +14,8 @@ images:
   newTag: 0a60e29096a033c759cd8d7efbee1d04e2ee1794
 
 
-patchesStrategicMerge:
-  - server-replica-patch.yaml
-  - client-replica-patch.yaml
-  - ingress-patch.yaml
+patches:
+  - path: server-replica-patch.yaml
+  - path: client-replica-patch.yaml
+  - path: ingress-patch.yaml
+  

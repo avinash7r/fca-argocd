@@ -17,3 +17,7 @@ images:
 patchesStrategicMerge:
   - server-replica-patch.yaml
   - client-replica-patch.yaml
+
+patches:
+  - path: server-replica-patch.yaml
+  - path: client-replica-patch.yaml
