@@ -17,3 +17,4 @@ images:
 patchesStrategicMerge:
   - server-replica-patch.yaml
   - client-replica-patch.yaml
+  - ingress-patch.yaml
